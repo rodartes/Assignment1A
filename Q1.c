@@ -1,7 +1,9 @@
 /* CS261- Assignment 1A - Question 1
-   Name: 
+   Name: Linshengyi Sun Partner: Samantha Rodarte
    Date: 6/28/2020
-   Solution description:
+   Solution description: allocate a dynamic array of ten students, randomly assign id and scores to them.
+                         Find the mininum, maximum and average score of the students.
+                         Print out the information & result.
 */
  
 #include <stdio.h>
