@@ -78,9 +78,49 @@ void removeAtDynArr(DynArr *myDA, int idx_i){
 /* ************************************************************************
 	Stack Interface Functions
 ************************************************************************ */
-//change it
-//
+Stack *newStack(int capacity){
+
+}							
+void deleteStack(Stack *myStack){
+
+}
+int sizeStack(Stack *myStack){
+
+}					
+int isStackEmpty(Stack *myStack){
+
+}						
+void pushStack(Stack *myStack, TYPE value){
+
+}
+TYPE topStack(Stack *myStack){
+
+}			
+void popStack(Stack *myStack){
+
+}
 
 /* ************************************************************************
 	Bag Interface Functions
 ************************************************************************ */
+Bag *newBag(int capacity){
+
+}				
+void deleteBag(Bag *myBag){
+
+}						
+int sizeBag(Bag *myBag){
+
+}								
+int isBagEmpty(Bag *myBag){
+
+}					
+void addBag(Bag *myBag, TYPE value){
+
+}				
+int containsBag(Bag *myBag, TYPE value){
+
+}				
+void removeBag(Bag *myBag, TYPE value){
+
+}
