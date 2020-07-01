@@ -83,7 +83,7 @@ TYPE getDynArr(DynArr *myDA, int position){
 	return myDA -> data[position];
 }
 
-/*function to place an element at a specific index, coded by ...*/
+/*function to place an element at a specific index, coded by Linshengyi Sun*/
 
 void putDynArr(DynArr *myDA, int position, TYPE value){
 
@@ -91,7 +91,7 @@ void putDynArr(DynArr *myDA, int position, TYPE value){
 
 }
 
-/*function to swap two elements within an array, coded by ...*/
+/*function to swap two elements within an array, coded by Linshengyi Sun*/
 
 void swapDynArr(DynArr *myDA, int idx_i, int  idx_j){
 	TYPE temp = myDA->data[idx_i];
@@ -99,7 +99,7 @@ void swapDynArr(DynArr *myDA, int idx_i, int  idx_j){
 	myDA->data[idx_j] = temp;
 }
 
-/*function to remove an element at a specific index, coded by ...*/
+/*function to remove an element at a specific index, coded by Linshengyi Sun*/
 
 void removeAtDynArr(DynArr *myDA, int idx_i){
 	for(int i = idx_i; i < sizeDynArr(myDA); i++)
@@ -111,7 +111,7 @@ void removeAtDynArr(DynArr *myDA, int idx_i){
 }
 
 /* ************************************************************************
-	Stack Interface Functions
+	Stack Interface Functions // Coded by Linshengyi Sun
 ************************************************************************ */
 Stack *newStack(int capacity){
 	
