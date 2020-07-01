@@ -40,7 +40,7 @@ DynArr* newDynArr(int capacity){
 void deleteDynArr(DynArr *myDA){
 	assert(myDA != 0);
 	free(myDA -> data);
-	myDA ->cap = 0;
+	myDA -> cap = 0;
 	myDA -> size = 0;
 }						
 
@@ -168,7 +168,7 @@ Bag *newBag(int capacity){
 void deleteBag(Bag *myBag){
 	assert(myBag != 0);
 	free(myBag -> data);
-	myBag ->cap = 0;
+	myBag -> cap = 0;
 	myBag -> size = 0;
 }
 
@@ -187,9 +187,9 @@ int isBagEmpty(Bag *myBag){
 
 /*function to add an element to a bag, coded by Samantha Rodarte*/
 void addBag(Bag *myBag, TYPE value){
-	assert(myBag != NULL);
+	/*(assert(myBag != NULL);
 	if(myBag -> size >= myBag -> cap)
-		return;
+		return; */
 	myBag -> data[myBag -> size] = value;
 	myBag -> size++;
 
