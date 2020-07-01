@@ -155,12 +155,13 @@ void popStack(Stack *myStack){
 
 /*function to allocate and initialize a bag, coded by Samantha Rodarte*/
 Bag *newBag(int capacity){
-	struct DynArr *myBag;
+	struct DynArr *myBag = (DynArr *)malloc(sizeof( DynArr));
 	assert(capacity >= 0);
 	myBag -> cap = capacity;
 	myBag -> size = 0;
 	myBag -> data = (TYPE *) malloc(myBag -> cap * sizeof(TYPE));
 	assert(myBag -> data != 0);
+	return myBag;
 }
 
 /*function to deallocate data and delete a bag, coded by Samantha Rodarte*/
