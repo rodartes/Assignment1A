@@ -154,6 +154,7 @@ void camelCase(char* word)
 	if(is_all_letter(word) == 0 || is_all_symbol(word) == 0 || is_symbol_in_between(word) == 0)
   {
 		printf("Invalid string. \n");
+    exit(1);
 	}
   else
 	/*Convert all non letter character to underscores;
