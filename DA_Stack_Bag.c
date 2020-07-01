@@ -84,3 +84,70 @@ void removeAtDynArr(DynArr *myDA, int idx_i){
 /* ************************************************************************
 	Bag Interface Functions
 ************************************************************************ */
+
+/*function to allocate and initialize a bag, coded by Samantha Rodarte*/
+Bag *newBag(int capacity){
+	struct DynArr *myBag;
+	assert(capacity >= 0);
+	myBag -> cap = capacity;
+	myBag -> size = 0;
+	myBag -> data = (TYPE *) malloc(myBag -> cap * sizeof(TYPE));
+	assert(myBag -> data != 0);
+}
+
+/*function to deallocate data and delete a bag, coded by Samantha Rodarte*/
+void deleteBag(Bag *myBag){
+	assert(myBag != 0);
+	free(myBag -> data);
+	myBag ->cap = 0;
+	myBag -> size = 0;
+}
+
+/*function to return the size of a bag, coded by Samantha Rodarte*/
+int sizeBag(Bag *myBag){
+	return myBag -> size;
+}
+
+/*function which returns 1 if a bag is empty, and 0 if the bag has data, coded by Samantha Rodarte*/
+int isBagEmpty(Bag *myBag){
+	if(myBag -> size == 0)
+		return 1;
+	else
+		return 0;
+}
+
+/*function to add an element to a bag, coded by Samantha Rodarte*/
+void addBag(Bag *myBag, TYPE value){
+	assert(myBag != NULL);
+	if(myBag -> size >= myBag -> cap)
+		return;
+	myBag -> data[myBag -> size] = value;
+	myBag -> size++;
+
+}
+
+/*function to check if an element is contained within a bag, returning 1 if it is and 0 if it is not*/
+int containsBag(Bag *myBag, TYPE value){
+	assert(myBag != NULL);
+	int i = myBag -> size - 1;
+	while(i >= 0){
+		if(myBag -> data[i] == value)
+			return 1;
+	i--;
+	}
+	return 0;
+}
+
+/*function to remove a specific element from a bag, coded by Samantha Rodarte*/
+void removeBag(Bag *myBag, TYPE value){
+	assert(myBag != NULL);
+	int i = myBag -> size - 1;
+	while(i >= 0) {
+		if(myBag -> data[i] == value) {
+			myBag -> data[i] = myBag -> data[myBag -> size - 1];
+			myBag -> size-- ;
+			return;
+		}
+	i--;
+	}
+}				
