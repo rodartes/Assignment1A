@@ -1,3 +1,9 @@
+/* CS261- Assignment 1B 
+   Name: Linshengyi Sun Partner: Samantha Rodarte
+   Date: 6/29/2020
+   file description: Dynamic Array, Stack and Bag implementations
+*/
+
 // DA_Stack_Bag.c: Dynamic Array, Stack and Bag implementations
 #include <assert.h>
 #include <stdlib.h>
