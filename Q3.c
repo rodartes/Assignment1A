@@ -81,7 +81,8 @@ int is_symbol_in_between(char* word)
 {
   int length = stringLength(word);
   int true_or_false = 0;
-  for(int i = 1; i < length - 2; i++)
+  int i = 1;
+  for(i = 1; i < length - 2; i++)
   {
     if(!(word[i] >= 65 && word[i] <= 90) && !(word[i] >= 97 && word[i] <= 122))
     {
@@ -168,7 +169,7 @@ void camelCase(char* word)
 	  //Start to convert it to the final version
 	  int t, length = stringLength(word);
     int i = 0;
-	  for(int i = t = 0; i<length;++i)
+	  for(i = t = 0; i<length;++i)
 	  {
       if(word[i] == '_')
 		  {
